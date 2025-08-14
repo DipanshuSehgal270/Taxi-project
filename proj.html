@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        Change the website title here. This is what appears in the browser tab.
+    -->
+    <title>One Way Taxi Service</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a clean, professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Custom gradient for a sleek look */
+        .hero-gradient {
+            background-image: linear-gradient(to right, #0a0a0a, #1f2937);
+        }
+        /* Keyframes for a subtle hero text animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased overflow-x-hidden">
+
+    <!-- Main Container -->
+    <div class="min-h-screen flex flex-col items-center">
+
+        <!-- Header Section -->
+        <header class="w-full bg-gray-900 bg-opacity-80 backdrop-filter backdrop-blur-lg p-4 shadow-lg sticky top-0 z-50">
+            <nav class="container mx-auto flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <!-- Updated SVG for a more modern icon -->
+                    <svg class="h-9 w-9 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                    </svg>
+                    <!-- 
+                        Change the brand name here. This is the main title of your service.
+                    -->
+                    <h1 class="text-3xl font-bold text-white tracking-wide">One way taxi services</h1>
+                </div>
+                <!-- 
+                    This is the main call-to-action button in the header.
+                    Change the "Book Now" text and the phone number in the `href` attribute.
+                -->
+                <a href="#contact" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-500 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    Book Now
+                </a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="w-full relative h-screen md:h-[650px] flex items-center justify-center p-4 hero-gradient">
+            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://img.freepik.com/free-vector/taxi-online-service-with-map_1150-39387.jpg?semt=ais_hybrid&w=740');"></div>
+            <!-- 
+                This is the main text in the hero section. 
+                Change the headline and the subheading to describe your service.
+                You can also replace the placeholder image URL in the `style` attribute above.
+            -->
+            <div class="relative z-10 text-center animate-fade-in-up">
+                <h2 class="text-4xl md:text-7xl font-extrabold leading-tight text-white drop-shadow-lg tracking-tight">
+                    Smooth Journeys, <span class="text-indigo-400">Guaranteed.</span>
+                </h2>
+                <p class="mt-6 text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto drop-shadow-md">
+                    Your trusted partner for one-way taxi services. We make every trip a breeze.
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Content Wrapper -->
+        <main class="container mx-auto px-4 py-20 flex-grow">
+
+            <!-- Services Section -->
+            <section id="services" class="mb-24">
+                <h3 class="text-4xl md:text-5xl font-bold text-center mb-16 text-indigo-400">Our Services</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Service Card 1 -->
+                    <!-- Change the icon, title, and description for the first service here. -->
+                    <div class="bg-gray-900 p-10 rounded-3xl shadow-2xl border border-gray-800 hover:border-indigo-500 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-indigo-500/20">
+                        <div class="flex items-center justify-center text-indigo-400 mb-6">
+                            <svg class="h-14 w-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold text-center text-white mb-2">Long-Distance Trips</h4>
+                        <p class="text-gray-400 text-center text-lg">
+                            Reliable and comfortable travel for all your outstation and long-distance needs.
+                        </p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <!-- Change the icon, title, and description for the second service here. -->
+                    <div class="bg-gray-900 p-10 rounded-3xl shadow-2xl border border-gray-800 hover:border-indigo-500 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-indigo-500/20">
+                        <div class="flex items-center justify-center text-indigo-400 mb-6">
+                            <svg class="h-14 w-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold text-center text-white mb-2">Airport Connections</h4>
+                        <p class="text-gray-400 text-center text-lg">
+                            Timely and stress-free airport drop-offs and pickups, guaranteed.
+                        </p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <!-- Change the icon, title, and description for the third service here. -->
+                    <div class="bg-gray-900 p-10 rounded-3xl shadow-2xl border border-gray-800 hover:border-indigo-500 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-indigo-500/20">
+                        <div class="flex items-center justify-center text-indigo-400 mb-6">
+                            <svg class="h-14 w-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold text-center text-white mb-2">Custom Routes</h4>
+                        <p class="text-gray-400 text-center text-lg">
+                            Personalized taxi services for your unique travel plans and special events.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Driver Details Section -->
+            <section id="driver" class="mb-24">
+                <div class="bg-gray-900 p-10 rounded-3xl shadow-2xl flex flex-col md:flex-row items-center gap-12 border border-gray-800">
+                    <div class="w-full md:w-1/3 flex-shrink-0">
+                        <!-- 
+                            Change the driver's photo here by updating the `src` URL. 
+                            The dimensions are a placeholder; a square photo works best.
+                        -->
+                        <img src="https://cdn.pixabay.com/photo/2025/03/18/18/59/taxi-9478977_640.png" alt="Driver's Photo">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h3 class="text-4xl md:text-5xl font-bold text-indigo-400 mb-6">Meet Your Driver</h3>
+                        <!-- 
+                            Edit the driver's bio here to tell your story and describe your experience.
+                        -->
+                        <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                            Hello, my name is Vishal Sehgal and I have been providing professional and reliable one-way taxi services for over a decade. I am based in Lohara, Ludhiana, Punjab and am dedicated to ensuring your journey is not just safe, but also comfortable and punctual. My commitment to excellence and attention to detail will make your travel experience seamless and enjoyable.
+                        </p>
+                        <ul class="text-gray-300 space-y-4">
+                            <li class="flex items-center">
+                                <svg class="h-7 w-7 text-indigo-400 mr-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                                <!-- 
+                                    Update the owner's name.
+                                -->
+                                <span class="font-semibold text-xl">Owner Name:</span> <span class="text-lg">&nbsp; Vishal Sehgal</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-7 w-7 text-indigo-400 mr-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79l5.19 5.19-4.75 4.75zm8.93-2.61l-4.75-4.75 5.19-5.19c.13.57.21 1.17.21 1.79 0 4.08-3.05 7.44-7 7.93zM12 4.07c3.95.49 7 3.85 7 7.93 0 .62-.08 1.22-.21 1.79l-5.19-5.19 4.75-4.75zm-8.93 2.61l4.75 4.75-5.19 5.19c-.13-.57-.21-1.17-.21-1.79 0-4.08 3.05-7.44 7-7.93z"></path></svg>
+                                <!-- 
+                                    Update your place of living here.
+                                -->
+                                <span class="font-semibold text-xl">Place of Living:</span> <span class="text-lg">&ensp; Lohara, Ludhiana, Punjab</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="text-center">
+                <h3 class="text-4xl md:text-5xl font-bold text-indigo-400 mb-8">Ready to Ride?</h3>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
+                    Contact me directly to book your one-way journey. I'm available 24/7 to assist you.
+                </p>
+                
+                <!-- 
+                    This is the main contact button. It's the most important part!
+                    Change the phone number in the `href` attribute so it works for mobile users.
+                    Also, change the phone number displayed in the `<span>` tag.
+                -->
+                <a href="tel:[Your Phone Number]" class="inline-flex items-center justify-center text-4xl md:text-5xl font-extrabold text-white bg-indigo-600 px-12 py-6 rounded-full shadow-2xl hover:bg-indigo-500 transition-all duration-300 transform hover:scale-105 hover:shadow-indigo-500/50">
+                    <svg class="h-10 w-10 md:h-12 md:w-12 mr-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.64-.56-.23-1.2-.17-1.61.24l-2.01 2c-.1.1-.2.2-.3.3-.23.23-.48.4-.73.5-.25.1-.5.2-.75.2-.25 0-.5-.1-.75-.2-.25-.1-.4-.27-.6-.5-.2-.23-.4-.48-.6-.73l-1.99-2c-.41-.41-.47-1.05-.24-1.61.44-1.12.64-2.32.64-3.57 0-1.25-.2-2.45-.64-3.57-.23-.56-.17-1.2.24-1.61l2-2.01c.41-.41 1.05-.47 1.61-.24 1.12.44 2.32.64 3.57.64s2.45-.2 3.57-.64c.56-.23 1.2-.17 1.61.24l2 2.01c.41.41.47 1.05.24 1.61-.44 1.12-.64 2.32-.64 3.57 0 1.25.2 2.45.64 3.57.23.56.17 1.2-.24 1.61l-2 2.01z"></path></svg>
+                    <span class="text-2xl md:text-3xl">Contact: +91 9814200504</span>
+                </a>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full bg-gray-900 text-center p-6 text-gray-500 mt-20">
+            <!-- 
+                Update the copyright and company name here.
+            -->
+            <p>&copy; 2024 CityRide. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
